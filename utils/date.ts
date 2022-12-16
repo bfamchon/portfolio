@@ -1,5 +1,4 @@
 export const transformTwoDatesToStringPeriod = (from: Date, to: Date | undefined) => {
-  console.log(from, to);
   const transformedFrom = new Intl.DateTimeFormat('en-GB', {
     month: 'long',
     year: 'numeric'

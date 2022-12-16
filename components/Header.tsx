@@ -19,18 +19,29 @@ const Header = () => {
 
     if (currentTheme === 'dark') {
       return (
-        <SunIcon className="w-10 h-10 text-yellow-500 " role="button" onClick={() => setTheme('light')} />
+        <SunIcon
+          title="Lumos !"
+          className="w-10 h-10 text-yellow-500 "
+          role="button"
+          onClick={() => setTheme('light')}
+        />
       );
     } else {
-      return <MoonIcon className="w-10 h-10 text-gray-900 " role="button" onClick={() => setTheme('dark')} />;
+      return (
+        <MoonIcon
+          title="Nox !"
+          className="w-10 h-10 text-gray-900 "
+          role="button"
+          onClick={() => setTheme('dark')}
+        />
+      );
     }
   };
 
   return (
-    <header className="h-15 shadow-sm dark:border-gray-700">
-      <div className="container  px-4 sm:px-6 py-4 flex justify-between items-center mx-auto">
+    <header className="w-full shadow-sm bg-white dark:border-gray-700 dark:bg-black">
+      <div className="container px-4 sm:px-6 py-4 flex justify-between items-center mx-auto">
         <Logo />
-
         {renderThemeChanger()}
       </div>
     </header>
