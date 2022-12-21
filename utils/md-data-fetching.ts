@@ -2,6 +2,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import path from 'path';
 import { MarkdownData } from '../types/markdown';
+import { MarkdownDescription } from './../types/markdown';
 
 const contentsDirectory = path.join(process.cwd(), 'contents');
 
@@ -22,7 +23,7 @@ export const getAllExtendedMarkdownFromDirectory = (directoryPathInsideContents:
   });
 };
 
-export const getAllMarkdownDataAbout = (subject: 'career' | 'studies') =>
+export const getAllMarkdownDataAbout = (subject: 'career' | 'studies' | 'about') =>
   getAllExtendedMarkdownFromDirectory(subject);
 
 export const getAllCareerData = (): MarkdownData[] =>
@@ -41,4 +42,10 @@ export const getAllStudiesData = (): MarkdownData[] =>
     company: md.metadata.company as string,
     from: md.metadata.from as string,
     to: md.metadata.to || null
+  }));
+
+export const getAllDescriptionsData = (): MarkdownDescription[] =>
+  getAllMarkdownDataAbout('about').map((md) => ({
+    text: md.content,
+    id: md.metadata.id
   }));

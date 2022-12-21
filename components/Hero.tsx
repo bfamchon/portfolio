@@ -14,10 +14,9 @@ export const Hero = () => (
         </h1>
 
         <p className="mb-6">
-          Fullstack web developer who values delivering web products with the best user experience.
+          It&apos;s a pleasure to see you on this portfolio !
           <br />
-          It&apos;s a pleasure to see you on this portfolio, here you will find many infos on what I do, like,
-          and who I am...
+          Here you will find many infos on what I do, like, and who I am...
           <br />
         </p>
       </div>
@@ -26,24 +25,21 @@ export const Hero = () => (
         alt="Picture of the author: Baptiste Famchon"
         placeholder="blur"
         blurDataURL={`data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=`}
-        width={180}
-        height={180}
-        className="hidden lg:flex rounded-xl self-center justify-self-center border-4 border-black dark:border-white"
+        width={200}
+        height={200}
+        className="hidden lg:flex rounded-full self-center justify-self-center border-4 border-black dark:border-white"
       />
     </section>
     <ul className="flex flex-wrap my-6 justify-center content-end">
-      {/* <li className="mx-6 my-2">
+      <li className="mx-6 my-2">
         <StyledLink href="#about" text="About" />
-      </li> */}
+      </li>
       <li className="mx-6 my-2">
         <StyledLink href="#studies" text="Studies" />
       </li>
       <li className="mx-6 my-2">
         <StyledLink href="#career" text="Career" />
       </li>
-      {/* <li className="mx-6 my-2">
-        <StyledLink href="#skills" text="Skills" />
-      </li> */}
       <li className="mx-6 my-2">
         <StyledLink href="https://www.linkedin.com/in/baptiste-famchon/" text="Let's talk !" />
       </li>
