@@ -10,7 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Head>
-        <title>Baptiste Famchon</title>
+        <meta name="google-site-verification" content="XEVz73-K_208Gbl9J8HEZti9-q4c_vlRhZ_b8IpewZM" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
