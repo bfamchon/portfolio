@@ -41,6 +41,9 @@ export const Hero = () => (
         <StyledLink href="#career" text="Career" />
       </li>
       <li className="mx-6 my-2">
+        <StyledLink href="#projects" text="Projects" />
+      </li>
+      <li className="mx-6 my-2">
         <StyledLink href="https://www.linkedin.com/in/baptiste-famchon/" text="Let's talk !" />
       </li>
     </ul>
