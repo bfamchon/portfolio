@@ -1,5 +1,6 @@
 ---
-from: '2022-05-01T00:00:00.000Z'
+from: '2022-04-01T00:00:00.000Z'
+to: '2023-02-28T00:00:00.000Z'
 job: Senior web developer
 company: theTribe
 ---
