@@ -33,7 +33,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "gray-matter": "^4.0.3",
-    "next-seo": "^5.15.0",
+    "next-seo": "^6.0.0",
     "next-themes": "^0.2.1",
     "path": "^0.12.7",
     "prettier": "^2.7.1",
