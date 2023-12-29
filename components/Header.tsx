@@ -39,11 +39,11 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full shadow-sm bg-white dark:border-gray-700 dark:bg-black">
-      <div className="container px-4 sm:px-6 py-4 flex justify-between items-center mx-auto">
+    <header className="w-full shadow-sm">
+      <nav className="container px-4 sm:px-6 py-4 flex justify-between items-center mx-auto">
         <Logo />
         {renderThemeChanger()}
-      </div>
+      </nav>
     </header>
   );
 };

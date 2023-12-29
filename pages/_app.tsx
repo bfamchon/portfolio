@@ -10,6 +10,7 @@ import '../styles/globals.css';
 config.autoAddCss = false;
 
 import { ThemeProvider } from 'next-themes';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -19,6 +20,21 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </ThemeProvider>
       <Analytics />
+      <Script id="script-custom-substack-widget">
+        {`window.CustomSubstackWidget = {
+            substackUrl: 'bfamchon.substack.com',
+            placeholder: 'example@gmail.com',
+            buttonText: 'Subscribe',
+            theme: 'custom',
+            colors: {
+              primary: '#f9fafb',
+              input: '#282c34',
+              email: '#f9fafb',
+              text: '#282c34',
+            }
+          }`}
+      </Script>
+      <Script src="https://substackapi.com/widget.js" async></Script>
     </>
   );
 }

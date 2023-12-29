@@ -14,12 +14,12 @@ const shadow = (e: any) => {
     //offsetHeight gives the measurement in pixels of the element's CSS height
 
     //measures of the hero div
-    const width = hero.offsetWidth;
-    const height = hero.offsetHeight;
+    const width = window.screen.width;
+    const height = window.screen.height;
+
     //the exact measure pixel in the hero where the mouse is moving (e -mousemove) in x and y
     let x = e.offsetX;
     let y = e.offsetY;
-
     //we want  to update the values of x and y exaclty near by the text h1 top left, to start there.
     if (hero !== e.target) {
       x = x + e.target.offsetLeft;
@@ -39,14 +39,14 @@ const shadow = (e: any) => {
 
 export const Hero = () => {
   React.useEffect(() => {
-    const hero = document.getElementById('hero');
-    if (hero) {
-      hero.addEventListener('mousemove', shadow);
-      return () => hero.removeEventListener('mousemove', shadow);
+    const nextPage = document.getElementById('__next');
+    if (nextPage) {
+      nextPage.addEventListener('mousemove', shadow);
+      return () => nextPage.removeEventListener('mousemove', shadow);
     }
   }, []);
   return (
-    <div id="hero" className="flex flex-col min-h-[calc(100vh_-_84px)]">
+    <div id={'hero'} className="flex flex-col min-h-[calc(100vh_-_84px)]">
       <section className="grid grid-cols-3 gap-4 mb-6 flex-1">
         <div className="col-span-3 lg:col-span-2 flex flex-col h-full justify-center">
           <p className={`font-mono`}>Hello, my name is</p>
@@ -77,19 +77,14 @@ export const Hero = () => {
       </section>
       <ul className="flex flex-wrap my-6 justify-center content-end">
         <li className="mx-6 my-2">
-          <StyledLink href="#about" text="About" />
+          <StyledLink href="/about#me">About</StyledLink>
+        </li>
+
+        <li className="mx-6 my-2">
+          <StyledLink href="/blog">Blog</StyledLink>
         </li>
         <li className="mx-6 my-2">
-          <StyledLink href="#studies" text="Studies" />
-        </li>
-        <li className="mx-6 my-2">
-          <StyledLink href="#career" text="Career" />
-        </li>
-        <li className="mx-6 my-2">
-          <StyledLink href="#projects" text="Projects" />
-        </li>
-        <li className="mx-6 my-2">
-          <StyledLink href="https://www.linkedin.com/in/baptiste-famchon/" text="Let's talk !" />
+          <StyledLink href="https://www.linkedin.com/in/baptiste-famchon/">Let&apos;s talk !</StyledLink>
         </li>
       </ul>
     </div>

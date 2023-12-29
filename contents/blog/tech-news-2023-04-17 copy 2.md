@@ -1,0 +1,27 @@
+---
+title: 'Veille semaine 10 avril'
+preview: 'Une belle annonce spotted sur MDN...'
+slug: 'tech-news-2023-04-17'
+tags: ['React', 'WebGPU', 'Productivité']
+---
+
+Hello world, voici la veille dev' de la semaine !
+
+Une belle annonce spotted sur MDN...
+
+- 📃 Le successeur de WebGL pointe son nez: l'API WebGPU. Au programme, performance et compatibilité GPU améliorée pour le traitement de certaines tâches dans le browser !
+  [https://lnkd.in/eSXReqqX](https://lnkd.in/eSXReqqX)
+
+- 📃Cette infographie parlera a beaucoup d'entre nous ! Un article intéréssant sur le coup d'interruption... Finalement, tout est histoire de contexte.
+  [https://lnkd.in/eKh2A4Gn](https://lnkd.in/eKh2A4Gn)
+
+- 🐙 Une alternative open sources et on premise à GitHub Copilot avec Tabby, affaire à suivre !
+  [https://lnkd.in/eS3kH4P8](https://lnkd.in/eS3kH4P8)
+
+- 🌐 Découverte de Verdaccio, avec lequel nous pouvons facilement créer un registry NPM. J'ai trouvé ça pratique pour tester la publication de libs en local afin de tester des outils comme la publication avec lerna.
+  [https://lnkd.in/eUpqPxjA](https://lnkd.in/eUpqPxjA)
+
+- Qui ne s'est jamais retrouvé devant un nombre sans savoir ce qu'il représentait ? Voici une vidéo pleine de sens sur les "Magic Numbers".
+  [https://lnkd.in/ezVS2DZG](https://lnkd.in/ezVS2DZG)
+
+Bonne lecture 🤓
