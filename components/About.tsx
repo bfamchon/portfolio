@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React, { FormEvent } from 'react';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import ReactMarkdown from 'react-markdown';
 import styles from '../styles/About.module.css';
 import { MarkdownDescription } from '../types/markdown';
 type BioLength = 'little' | 'medium' | 'aLot';
@@ -12,7 +12,7 @@ const TEXT = {
 } as const;
 
 const Label = ({ htmlFor, children }: { htmlFor: string; children: React.ReactNode }) => (
-  <label htmlFor={htmlFor} className="font-sans text-sm tracking-widest mt-1 cursor-pointer">
+  <label htmlFor={htmlFor} className="mt-1 font-sans text-sm tracking-widest cursor-pointer">
     {children}
   </label>
 );
@@ -54,21 +54,20 @@ const About = ({ descriptions }: { descriptions: MarkdownDescription[] }) => {
   );
 
   return (
-    <>
       <div className="flex flex-wrap justify-around min-h-[500px]">
-        <div className="flex flex-1 flex-col justify-top mx-6 text-center max-w-lg">
+        <div className="flex flex-col flex-1 max-w-lg mx-6 text-center justify-top">
           <form className="" id="biolength">
             <fieldset className="bio-fieldset">
               <legend className="font-mono text-sm text-gray-500 dark:text-gray-400">
                 How much are you curious ?
               </legend>
-              <div className="flex my-6 justify-center">
+              <div className="flex justify-center my-6">
                 <div className="flex flex-col items-start">
                   <RadioInput id="length-short" name="biolength" value="little" onChange={onOptionSelected} />
                   <Label htmlFor="length-short">little</Label>
                 </div>
 
-                <div className="flex flex-col mx-10 items-center">
+                <div className="flex flex-col items-center mx-10">
                   <RadioInput
                     id="length-medium"
                     name="biolength"
@@ -102,11 +101,10 @@ const About = ({ descriptions }: { descriptions: MarkdownDescription[] }) => {
             width={400}
             height={400}
             blurDataURL={`data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=`}
-            className="align-self-center rounded-xl border-4 border-black dark:border-white"
+            className="border-4 border-black align-self-center rounded-xl dark:border-white"
           />
         </div>
       </div>
-    </>
   );
 };
 
