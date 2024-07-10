@@ -51,7 +51,7 @@ devDependencies:
     version: 0.2.0(@fortawesome/fontawesome-svg-core@6.5.1)(react@18.2.0)
   '@heroicons/react':
     specifier: ^2.1.1
-    version: 2.1.1(react@18.2.0)
+    version: 2.1.2(react@18.2.0)
   '@types/node':
     specifier: 20.11.27
     version: 20.11.27
@@ -208,8 +208,8 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@heroicons/react@2.1.1(react@18.2.0):
-    resolution: {integrity: sha512-JyyN9Lo66kirbCMuMMRPtJxtKJoIsXKS569ebHGGRKbl8s4CtUfLnyKJxteA+vIKySocO4s1SkTkGS4xtG/yEA==}
+  /@heroicons/react@2.1.2(react@18.2.0):
+    resolution: {integrity: sha512-tjNtOBRYEd7zCQLi6fFfcCm1L+62a+qu0hMlcRAyF0zV1os8ftenH7TVmUsR/x4yavGB8sOK/b/ojbMqI5DTFA==}
     peerDependencies:
       react: '>= 16'
     dependencies:
@@ -1101,7 +1101,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: false
 
   /client-only@0.0.1:
@@ -1883,8 +1883,8 @@ packages:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
 
-  /fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+  /fsevents@2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
